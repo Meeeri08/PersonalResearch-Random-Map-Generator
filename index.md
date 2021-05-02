@@ -53,24 +53,25 @@ There are two types of maps:
 
 #### Dungeon Generation using Binary Space Trees
 
-|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_1.png" alt="Height Formula" width="612" height="204">|
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_1.png" alt="Height Formula" width="612" height="204">|
 |:---:|
 |Dividing a square into two recursively|
 
-|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_2.png" alt="Height Formula" width="612" height="204">|
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_2.png" alt="Height Formula" width="612" height="204">|
 |:---:|
 |Making rooms and connecting them using a binary space partition|
 
-|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_5.png" alt="Height Formula" width="507" height="566">|
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_5.png" alt="Height Formula" width="507" height="566">|
 |:---:|
 |Creating corridors|
 
-|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_7.png" alt="Height Formula" width="498" height="490">|
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_7.png" alt="Height Formula" width="498" height="490">|
 |:---:|
 |Final result|
 
 #### Perlin Noise
 
+<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/noise.png" alt="Height Formula" width="801" height="403">
 
 
 ### TODOs
