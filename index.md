@@ -34,6 +34,7 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 - You may generate an unplayable world
 - Worlds can feel repetitive
 
+### Games we know that are using this process
 ### When should we use a random generated map?
 - Open world or survival games
 - Space exploration and trading games.
@@ -42,9 +43,6 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 |:---:|:---:|
 |Minecraft |No man's sky|
 
-### Games we know that are using this process
-
-blablabla
 
 ### How can we create this algorithm?
 
