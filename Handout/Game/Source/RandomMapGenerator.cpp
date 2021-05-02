@@ -12,7 +12,8 @@ RandomMapGenerator::~RandomMapGenerator()
 {
 }
 
-bool RandomMapGenerator::Awake(pugi::xml_node& config) {
+bool RandomMapGenerator::Awake(pugi::xml_node& config) 
+{
 
 	LOG("Loading Procedural Map Data");
 	bool ret = true;
@@ -22,14 +23,16 @@ bool RandomMapGenerator::Awake(pugi::xml_node& config) {
 	return ret;
 }
 
-int RandomMapGenerator::generateSeed() {
+int RandomMapGenerator::generateSeed() 
+{
 
 	msec = time(NULL) * 1000;
 
 	return msec;
 }
 
-void RandomMapGenerator::generateNoise() {
+void RandomMapGenerator::generateNoise() 
+{
 
 	generateNoise(default_seed);
 }

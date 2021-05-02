@@ -435,7 +435,7 @@ void Map::DrawProceduralMap()
 			
 			float value = height_map[x][y];
 
-			{
+			
 
 				
 				if (value > 0 && value < 0.2) app->render->DrawTexture(app->scene->forestTex,pos.x, pos.y, NULL, scale);
@@ -444,7 +444,7 @@ void Map::DrawProceduralMap()
 				else if (value > 0.6 && value < 1)  app->render->DrawTexture(app->scene->waterTex, pos.x, pos.y, NULL, scale);
 
 
-			}
+			
 			
 		}
 	}
