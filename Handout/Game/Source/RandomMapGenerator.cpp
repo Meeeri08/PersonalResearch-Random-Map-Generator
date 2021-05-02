@@ -51,9 +51,7 @@ void RandomMapGenerator::generateNoise(unsigned int seed)
 
 	//TODO 1.3:
 	//In order to create the noise you need to set the
-	//seed. Uncomment de following line and change 
-	//"myObject" to your variable name.
-	//myObject.SetSeed(seed);
+	//seed. You can use SetSeed function to do it
 
 
 	//TODO 1.4:
