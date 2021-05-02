@@ -34,7 +34,36 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 - You may generate an unplayable world
 - Worlds can feel repetitive
 
+### When should we use a random generated map?
 
+blablabla
+
+### Games we know that are using this process
+
+blablabla
+
+### How can we create this algorithm?
+
+blablabla diferents tipus blablabla
+
+### Perlin Noise
+
+blablabla
+
+### TODOs
+#### TODO 1:
+
+#### TODO 1.2:
+
+#### TODO 1.3:
+
+#### TODO 1.4:
+
+#### TODO 2:
+
+#### TODO 2.1:
+
+#### TODO 3:
 
 ## Bibliography
 Library used: [Fast Portable Noise Library created by Jordan Peck](https://github.com/Auburn/FastNoiseLite)
