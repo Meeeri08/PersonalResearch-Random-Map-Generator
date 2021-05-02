@@ -47,6 +47,7 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 ### How can we create this algorithm?
 
 There are two types of maps:
+
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/outdoor_map.gif" alt="Height Formula" width="600" height="340">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/indoor_map.gif" alt="Height Formula" width="600" height="340">|
 |:---:|:---:|
 |Outdoor map |Indoor map|
