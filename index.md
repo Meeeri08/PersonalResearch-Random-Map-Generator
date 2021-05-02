@@ -55,12 +55,21 @@ blablabla
 ```ruby
 FastNoiseLite noise;
 ```
-#### TODO 1.2:
+#### TODO 1.2: Set its Noise type to Perlin noise.
+```ruby
+noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin); 
 
-#### TODO 1.3:
+```
+#### TODO 1.3: Set the seed with SetSeed function.
+```ruby
+	noise.SetSeed(seed);
+```
+#### TODO 1.4: Set the frequency to 0.05
+```ruby
+	noise.SetFrequency(0.05);
 
-#### TODO 1.4:
-
+```
+Output: Nothing will be shown on screen yet.
 #### TODO 2:
 
 #### TODO 2.1:
