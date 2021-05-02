@@ -52,7 +52,7 @@ blablabla
 
 ### TODOs
 #### TODO 1: Create a FastNoiseLite object.
-```
+```ruby
 FastNoiseLite noise;
 ```
 #### TODO 1.2:
