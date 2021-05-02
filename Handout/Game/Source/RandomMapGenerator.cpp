@@ -73,7 +73,7 @@ void RandomMapGenerator::generateNoise(unsigned int seed)
 			//in app->map->height_map.
 			//TODO 2.1:
 			//Noise must be always between 1 and 0, so the next step you have
-			//to do is to apply the formula given by the author of the library: (Noise + 1) *0,5.
+			//to do is to apply the formula given by the author of the library: (Noise + 1) *0.5.
 
 
 
