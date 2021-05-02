@@ -34,7 +34,7 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 - You may generate an unplayable world
 - Worlds can feel repetitive
 
-### Games we know that are using this process
+
 ### When should we use a random generated map?
 - Open world or survival games
 - Space exploration and trading games.
@@ -46,26 +46,40 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 
 ### How can we create this algorithm?
 
-There are two types of maps:
 
+The tricky part in procedural generation is not to make things random, but to make them in a consistent way despite it’s randomness. 
+There are two types of maps:
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/outdoor_map.gif" alt="Height Formula" width="600" height="340">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/indoor_map.gif" alt="Height Formula" width="600" height="340">|
 |:---:|:---:|
 |Outdoor map |Indoor map|
 
+We will use different procedures to achieve each of them.
+
 #### Dungeon Generation using Binary Space Trees
+
+When making a dungeon you have to face the problem of filling the space with elements in a natural way.
+
+First step we have to do is to divide a plane into two sets recursively. We divide until we can't divide anymore or until we reach a maximum number of spaces.
 
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_1.png" alt="Height Formula" width="612" height="204">|
 |:---:|
 |Dividing a square into two recursively|
 
+Next step is to add borders: we got a random division, but we don’t want the rooms to use the whole space, so let’s add a method to cut their borders recursively.
+We can achieve that giving a regular or non regular margin between space wqall and room  wall.
+
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_2.png" alt="Height Formula" width="612" height="204">|
 |:---:|
 |Making rooms and connecting them using a binary space partition|
 
+The last step is to add corridors, we are going to do this by recursively connecting each node with it's sibling. 
+
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_5.png" alt="Height Formula" width="507" height="566">|
 |:---:|
 |Creating corridors|
-
+ 
+ This should be the final result: 
+ 
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_7.png" alt="Height Formula" width="498" height="490">|
 |:---:|
 |Final result|
