@@ -7,6 +7,7 @@ This content is generated for the second year's subject Project II, under superv
 ### About the research: What are Random Generated Maps?
 
 The procedural generation is the process to generate content algorithmically rather than manual. 
+
 In other words, random generated maps are created by computers instead of persons.
 
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/random_map_1.gif" alt="Height Formula" width="600" height="300">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/random_map_2.gif" alt="Height Formula" width="600" height="300">|
