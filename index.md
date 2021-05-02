@@ -8,34 +8,17 @@ This content is generated for the second year's subject Project II, under superv
 
 The procedural generation is the process to generate content algorithmically rather than manual. In other words, random generated maps are created by computers instead of persons.
 
+|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/random_map_1.gif" alt="Height Formula" width="600" height="300">|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/random_map_2.gif" alt="Height Formula" width="600" height="300">|
+|:---:|:---:|
+|Random generated terrain|Random generated dungeon|
 
 ### Why do we want random generated maps?
+Nowadays, a video game demands several materials to compose complex and large scene, carrying high costs in their content development. Developers use these algorithms to
+reduce the amount of time taken to create a game or certain features of it.
+
+Also, from the player perspective, it is more enjoyable to play a diferent map every time. So replayability is also very important.
 
 
-```markdown
-Syntax highlighted code block
+### Characteristics of a generated random map
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
