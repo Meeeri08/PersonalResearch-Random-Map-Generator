@@ -22,10 +22,17 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 
 
 ### Characteristics of a generated random map
+#### Why is it good?
 
+- It saves development time and money
+- It can save on memory usage
+- It increases replayability
+- It creates dynamic content
+- It creates a large variety of options
 
-
-
+#### Why is it bad?
+- You may generate an unplayable world
+- Worlds can feel repetitive
 
 
 
