@@ -35,20 +35,25 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 - Worlds can feel repetitive
 
 ### When should we use a random generated map?
+- Open world or survival games
+- Space exploration and trading games.
 
-blablabla
-
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/minecraft_cover.png" alt="Height Formula" width="300" height="500">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/no_mans_sky.PNG" alt="Height Formula" width="300" height="500">|
+|:---:|:---:|
+|Minecraft |No man's sky|
 ### Games we know that are using this process
 
 blablabla
 
 ### How can we create this algorithm?
 
-blablabla diferents tipus blablabla
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/outdoor_map.gif" alt="Height Formula" width="600" height="340">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/indoor_map.gif" alt="Height Formula" width="600" height="340">|
+|:---:|:---:|
+|Outdoor map |Indoor map|
 
 ### Perlin Noise
 
-blablabla
+
 
 ### TODOs
 #### TODO 1: Create a FastNoiseLite object.
