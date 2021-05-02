@@ -18,7 +18,7 @@ In other words, random generated maps are created by computers instead of person
 Nowadays, a video game demands several materials to compose complex and large scene, carrying high costs in their content development. Developers use these algorithms to
 reduce the amount of time taken to create a game or certain features of it.
 
-Also, from the player perspective, it is more enjoyable to play a diferent map every time. So replayability is also very important.
+Also, from the player perspective, it is more enjoyable to play a diferent map every time. So replayability is also a very important factor.
 
 
 ### Characteristics of a generated random map
