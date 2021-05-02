@@ -93,7 +93,7 @@ else if (value > 0.2 && value < 0.4) app->render->DrawTexture(app->scene->grassT
 else if (value > 0.4 && value < 0.6)  app->render->DrawTexture(app->scene->sandTex, pos.x, pos.y, NULL, scale);
 else if (value > 0.6 && value < 1)  app->render->DrawTexture(app->scene->waterTex, pos.x, pos.y, NULL, scale);
 ```
-Output
+Output: The terrain will be shown in screen with its textures. Use [SPACE] to generate new terrains with the generated perlin noises!
 
 
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/todo_3.PNG" alt="Height Formula" width="500" height="400">|
