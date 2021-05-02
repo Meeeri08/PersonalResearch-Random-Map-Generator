@@ -46,11 +46,30 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 
 ### How can we create this algorithm?
 
+There are two types of maps:
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/outdoor_map.gif" alt="Height Formula" width="600" height="340">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/indoor_map.gif" alt="Height Formula" width="600" height="340">|
 |:---:|:---:|
 |Outdoor map |Indoor map|
 
-### Perlin Noise
+#### Dungeon Generation using Binary Space Trees
+
+|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_1.png" alt="Height Formula" width="612" height="204">|
+|:---:|
+|Dividing a square into two recursively|
+
+|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_2.png" alt="Height Formula" width="612" height="204">|
+|:---:|
+|Making rooms and connecting them using a binary space partition|
+
+|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_5.png" alt="Height Formula" width="507" height="566">|
+|:---:|
+|Creating corridors|
+
+|<img src="https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/blob/main/docs/Assets/algorithm_7.png" alt="Height Formula" width="498" height="490">|
+|:---:|
+|Final result|
+
+#### Perlin Noise
 
 
 
