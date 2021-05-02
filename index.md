@@ -75,7 +75,7 @@ Output: Nothing will be shown on screen yet.
 app->map->height_map[x][y] = noise.GetNoise((float)x, (float)y);
 
 ```
-Output:                |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/todo_2.png" alt="Height Formula" width="500" height="400">|
+Output:<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/todo_2.png" alt="Height Formula" width="500" height="400">
 
 #### TODO 2.1: Noise must be always between 1 and 0 (use the following formula: (Noise + 1) *0.5).
 ```ruby
