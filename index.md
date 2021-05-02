@@ -41,6 +41,7 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/minecraft_cover.png" alt="Height Formula" width="300" height="500">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/no_mans_sky.PNG" alt="Height Formula" width="300" height="500">|
 |:---:|:---:|
 |Minecraft |No man's sky|
+
 ### Games we know that are using this process
 
 blablabla
