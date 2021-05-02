@@ -1,12 +1,16 @@
-## Welcome to GitHub Pages
+## Random Map Generation
 
-You can use the [editor on GitHub](https://github.com/Meeeri08/PersonalResearch-Random-Map-Generator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+My name is Maria Garrigolas Ledo, student of the [Bachelor's Degree in Video Games Design and Development](https://www.citm.upc.edu/ing/estudis/graus-videojocs/) at UPC CITM. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This content is generated for the second year's subject Project II, under supervision of lecturer [Ramon Santamaria](https://github.com/raysan5).
 
-### Markdown
+### About the research: What are Random Generated Maps?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The procedural generation is the process to generate content algorithmically rather than manual. In other words, random generated maps are created by computers instead of persons.
+
+
+### Why do we want random generated maps?
+
 
 ```markdown
 Syntax highlighted code block
