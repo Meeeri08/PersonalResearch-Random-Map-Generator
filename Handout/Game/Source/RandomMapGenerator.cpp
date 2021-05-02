@@ -12,7 +12,7 @@ RandomMapGenerator::~RandomMapGenerator()
 {
 }
 
-bool RandomMapGenerator::Awake(pugi::xml_node& config) 
+bool RandomMapGenerator::Awake() 
 {
 
 	LOG("Loading Procedural Map Data");
@@ -52,8 +52,8 @@ void RandomMapGenerator::generateNoise(unsigned int seed)
 	{
 		for (int y = 0; y < 100; y++)
 		{
-			app->map->height_map[x][y] = (noise.GetNoise((float)x, (float)y) +1) * 0.5;
 
+			app->map->height_map[x][y] = (noise.GetNoise((float)x, (float)y) +1) * 0.5;
 
 		}
 	}

@@ -9,13 +9,15 @@ class RandomMapGenerator : public Module
 {
 public:
 	RandomMapGenerator();
+
 	~RandomMapGenerator();
 
-	bool Awake(pugi::xml_node& config);
+	bool Awake();
 
 	int generateSeed();
 
 	void generateNoise();
+
 	void generateNoise(unsigned int seed);
 private:
 	time_t msec;

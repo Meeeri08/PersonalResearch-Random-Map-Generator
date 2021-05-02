@@ -19,7 +19,8 @@ Scene::Scene() : Module()
 
 // Destructor
 Scene::~Scene()
-{}
+{
+}
 
 // Called before render is available
 bool Scene::Awake()
@@ -39,7 +40,7 @@ bool Scene::Start()
 	forestTex = app->tex->Load("Assets/textures/forest.png");
 
 	app->random_map->generateNoise(app->random_map->generateSeed());
-	//app->audio->PlayMusic("Assets/audio/music/music_spy.ogg");
+	
 	return true;
 
 }

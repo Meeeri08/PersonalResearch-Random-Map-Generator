@@ -431,21 +431,14 @@ void Map::DrawProceduralMap()
 	{
 		for (int y = 0; y < 100; y++) {
 			iPoint pos = MapToWorld(x, y);
-
 			
 			float value = height_map[x][y];
-
-			
-
 				
 				if (value > 0 && value < 0.2) app->render->DrawTexture(app->scene->forestTex,pos.x, pos.y, NULL, scale);
 				else if (value > 0.2 && value < 0.4) app->render->DrawTexture(app->scene->grassTex, pos.x, pos.y, NULL, scale);
 				else if (value > 0.4 && value < 0.6)  app->render->DrawTexture(app->scene->sandTex, pos.x, pos.y, NULL, scale);
 				else if (value > 0.6 && value < 1)  app->render->DrawTexture(app->scene->waterTex, pos.x, pos.y, NULL, scale);
 
-
-			
-			
 		}
 	}
 }
