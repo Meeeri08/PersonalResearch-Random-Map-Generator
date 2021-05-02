@@ -11,7 +11,7 @@
 
 Input::Input() : Module()
 {
-	name.Create("input");
+	name.create("input");
 
 	keyboard = new KeyState[MAX_KEYS];
 	memset(keyboard, KEY_IDLE, sizeof(KeyState) * MAX_KEYS);

@@ -9,7 +9,7 @@
 
 Render::Render() : Module()
 {
-	name.Create("renderer");
+	name.create("renderer");
 	background.r = 0;
 	background.g = 0;
 	background.b = 0;
@@ -87,6 +87,12 @@ bool Render::CleanUp()
 	SDL_DestroyRenderer(renderer);
 	return true;
 }
+
+// L02: TODO 6: Implement a method to load the state
+// for now load camera's x and y
+
+// L02: TODO 8: Create a method to save the state of the renderer
+// using append_child and append_attribute
 
 void Render::SetBackgroundColor(SDL_Color color)
 {

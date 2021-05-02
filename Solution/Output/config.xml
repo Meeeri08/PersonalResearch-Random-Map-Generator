@@ -5,11 +5,9 @@
     <title>Game Development Testbed</title>
     <organization>UPC</organization>
   </app>
-
   <renderer>
     <vsync value="false"/>
   </renderer>
-
   <window>
     <resolution width="1280" height="720" scale="1"/>
     <fullscreen value="false"/>

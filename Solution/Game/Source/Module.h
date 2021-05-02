@@ -56,6 +56,8 @@ public:
 		return true;
 	}
 
+    // L02: TODO 2: Create new virtual methods to Load / Save
+
 public:
 
 	SString name;

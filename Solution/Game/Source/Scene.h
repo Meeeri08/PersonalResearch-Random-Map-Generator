@@ -31,9 +31,14 @@ public:
 
 	// Called before quitting
 	bool CleanUp();
-
+	SDL_Texture* waterTex;
+	SDL_Texture* sandTex;
+	SDL_Texture* grassTex;
+	SDL_Texture* forestTex;
 private:
-	SDL_Texture* img;
+
+
+
 };
 
 #endif // __SCENE_H__

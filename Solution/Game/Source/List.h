@@ -11,9 +11,9 @@ struct ListItem
 	ListItem<tdata>* next;
 	ListItem<tdata>* prev;
 
-	inline ListItem(const tdata& pData)
+	inline ListItem(const tdata& _data)
 	{
-		data = pData;
+		data = _data;
 		next = prev = NULL;
 	}
 
@@ -47,17 +47,17 @@ public:
 	// Destructor
 	~List()
 	{
-		Clear();
+		clear();
 	}
 
 	// Get Size
-	unsigned int Count() const
+	unsigned int count() const
 	{
 		return size;
 	}
 
 	// Add new item
-	ListItem<tdata>* Add(const tdata& item)
+	ListItem<tdata>* add(const tdata& item)
 	{
 		ListItem<tdata>* dataItem;
 		dataItem = new ListItem<tdata>(item);
@@ -78,7 +78,7 @@ public:
 	}
 
 	// Deletes an item from the list
-	bool Del(ListItem<tdata>* item)
+	bool del(ListItem<tdata>* item)
 	{
 		if(item == NULL)
 		{
@@ -118,17 +118,17 @@ public:
 	}
 
 	// Destroy and free all mem
-	void Clear()
+	void clear()
 	{
-		ListItem<tdata>* pData;
-		ListItem<tdata>* pNext;
-		pData = start;
+		ListItem<tdata>*   p_data;
+		ListItem<tdata>*   p_next;
+		p_data = start;
 
-		while(pData != NULL)
+		while(p_data != NULL)
 		{
-			pNext = pData->next;
-			RELEASE(pData);
-			pData = pNext;
+			p_next = p_data->next;
+			RELEASE(p_data);
+			p_data = p_next;
 		}
 
 		start = end = NULL;
@@ -139,11 +139,11 @@ public:
 	tdata& operator [](const unsigned int index)
 	{
 		long pos;
-		ListItem<tdata>* pItem;
+		ListItem<tdata>* p_item;
 		pos = 0;
-		pItem = start;
+		p_item = start;
 
-		while(pItem != NULL)
+		while(p_item != NULL)
 		{
 			if(pos == index)
 			{
@@ -151,10 +151,10 @@ public:
 			}
 
 			++pos;
-			pItem = pItem->next;
+			p_item = p_item->next;
 		}
 
-		return(pItem->data);
+		return(p_item->data);
 	}
 
 	/**
@@ -162,12 +162,12 @@ public:
 	*/
 	const tdata& operator [](const unsigned int index) const
 	{
-		long pos;
-		ListItem<tdata>* pItem;
+		long				  pos;
+		ListItem<tdata>*   p_item;
 		pos = 0;
-		pItem = start;
+		p_item = start;
 
-		while(pItem != NULL)
+		while(p_item != NULL)
 		{
 			if(pos == index)
 			{
@@ -175,57 +175,66 @@ public:
 			}
 
 			++pos;
-			pItem = pItem->next;
+			p_item = p_item->next;
 		}
 
-		ASSERT(pItem);
+		ASSERT(p_item);
 
-		return(pItem->data);
+		return(p_item->data);
 	}
 
+	/**
+	* const read operator access directly to a position in the list
+	*/
 	const List<tdata>& operator +=(const List<tdata>& other_list)
 	{
-		ListItem<tdata>* pItem = other_list.start;
+		ListItem<tdata>*   p_item = other_list.start;
 
-		while(pItem != NULL)
+		while(p_item != NULL)
 		{
-			Add(pItem->data);
-			pItem = pItem->next;
+			add(p_item->data);
+			p_item = p_item->next;
 		}
 
 		return(*this);
 	}
 
+	/**
+	* const access to a node in a position in the list
+	*/
 	const ListItem<tdata>* At(unsigned int index) const
 	{
-		long pos = 0;
-		ListItem<tdata>* pItem = start;
+		long				  pos = 0;
+		ListItem<tdata>*   p_item = start;
 
-		while(pItem != NULL)
+		while(p_item != NULL)
 		{
 			if(pos++ == index)
 				break;
 
-			pItem = pItem->next;
+			p_item = p_item->next;
 		}
 
-		return pItem;
+		return p_item;
 	}
 
+	/**
+	* access to a node in a position in the list
+	*/
 	ListItem<tdata>* At(unsigned int index)
 	{
-		long pos = 0;
-		ListItem<tdata>* pItem = start;
+		long				  pos = 0;
+		ListItem<tdata>*   p_item = start;
 
-		while(pItem != NULL)
+		while(p_item != NULL)
 		{
 			if(pos++ == index)
 				break;
 
-			pItem = pItem->next;
+			p_item = p_item->next;
 		}
 
-		return pItem;
+		return p_item;
 	}
 
 	// Sort
@@ -255,7 +264,10 @@ public:
 		return ret;
 	}
 
-	int Find(const tdata& data)
+	/**
+	* returns the first apperance of data as index (-1 if not found)
+	*/
+	int find(const tdata& data)
 	{
 		ListItem<tdata>* tmp = start;
 		int index = 0;
@@ -273,30 +285,30 @@ public:
 
 	void InsertAfter(uint position, const List<tdata>& list)
 	{
-		ListItem<tdata>* pMyList = At(position);
-		ListItem<tdata>* pOtherList = list.start;
+		ListItem<tdata>* p_my_list = At(position);
+		ListItem<tdata>* p_other_list = list.start;
 
-		while(pOtherList != NULL)
+		while(p_other_list != NULL)
 		{
-			ListItem<tdata>* pNewItem = new ListItem<tdata>(pOtherList->data);
+			ListItem<tdata>* p_new_item = new ListItem<tdata>(p_other_list->data);
 
-			pNewItem->next = (pMyList) ? pMyList->next : NULL;
+			p_new_item->next = (p_my_list) ? p_my_list->next : NULL;
 
-			if(pNewItem->next != NULL)
-				pNewItem->next->prev = pNewItem;
+			if(p_new_item->next != NULL)
+				p_new_item->next->prev = p_new_item;
 			else
-				end = pNewItem;
+				end = p_new_item;
 
-			pNewItem->prev = pMyList;
+			p_new_item->prev = p_my_list;
 
-			if(pNewItem->prev != NULL)
-				pNewItem->prev->next = pNewItem;
+			if(p_new_item->prev != NULL)
+				p_new_item->prev->next = p_new_item;
 			else
-				start = pNewItem;
+				start = p_new_item;
 
-			pMyList = pNewItem;
-			pOtherList = pOtherList->next;
+			p_my_list = p_new_item;
+			p_other_list = p_other_list->next;
 		}
 	}
 };
-#endif // __LIST_H__
+#endif // LIST_H__

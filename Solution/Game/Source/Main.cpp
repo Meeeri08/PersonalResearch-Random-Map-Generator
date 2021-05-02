@@ -36,6 +36,7 @@ int main(int argc, char* args[])
 	{
 		switch(state)
 		{
+
 			// Allocate the engine --------------------------------------------
 			case CREATE:
 			LOG("CREATION PHASE ===============================");

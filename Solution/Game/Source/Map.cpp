@@ -16,7 +16,8 @@ Map::Map() : Module(), mapLoaded(false)
 
 // Destructor
 Map::~Map()
-{}
+{
+}
 
 // Called before render is available
 bool Map::Awake(pugi::xml_node& config)
@@ -434,24 +435,10 @@ void Map::DrawRandomMap()
 			
 			float value = height_map[x][y];
 				
-				//TODO 3:
-				// Now that we have the perlin noise blit in the white square, it's time to draw the map. 
-				//Uncomment lines from 445 to 451 and start printing the forest, grass, sand and water textures.
-				//Remember the different values from alpha (values have to be between 0 and 1, being more dark 
-				//the closest to 0 and more light the closest to 1). So the order should be the following: 
-				//1-forestTex 2-grassTex 3-sandTex 4-waterTex.
-				//All this textures are in app->scene.
-	
-				SDL_Rect grid;
-
-				grid.x = pos.x / 2;
-				grid.y = pos.y / 2;
-				grid.w = 32 / 2;
-				grid.h = 32 / 2;
-				app->render->DrawRectangle(grid, 255, 255, 255, 255 - (value * 255), true, true);
-
-				//Press [SPACE] to randomly generate more map terrains!
-			
+				if (value > 0 && value < 0.2) app->render->DrawTexture(app->scene->forestTex,pos.x, pos.y, NULL, scale);
+				else if (value > 0.2 && value < 0.4) app->render->DrawTexture(app->scene->grassTex, pos.x, pos.y, NULL, scale);
+				else if (value > 0.4 && value < 0.6)  app->render->DrawTexture(app->scene->sandTex, pos.x, pos.y, NULL, scale);
+				else if (value > 0.6 && value < 1)  app->render->DrawTexture(app->scene->waterTex, pos.x, pos.y, NULL, scale);
 
 		}
 	}

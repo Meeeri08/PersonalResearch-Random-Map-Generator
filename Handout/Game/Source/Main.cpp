@@ -1,4 +1,5 @@
 #include "App.h"
+#include "Window.h"
 
 #include "Defs.h"
 #include "Log.h"
@@ -28,7 +29,6 @@ App* app = NULL;
 int main(int argc, char* args[])
 {
 	LOG("Engine starting ...");
-
 	MainState state = CREATE;
 	int result = EXIT_FAILURE;
 

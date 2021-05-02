@@ -71,7 +71,7 @@ bool Scene::Update(float dt)
 	if (app->input->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN)
 		app->random_map->generateNoise(app->random_map->generateSeed());
 
-	app->map->DrawProceduralMap();
+	app->map->DrawRandomMap();
 
 
 	return true;

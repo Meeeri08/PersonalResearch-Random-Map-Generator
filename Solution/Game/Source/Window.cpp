@@ -11,7 +11,7 @@ Window::Window() : Module()
 {
 	window = NULL;
 	screenSurface = NULL;
-	name.Create("window");
+	name.create("window");
 }
 
 // Destructor
