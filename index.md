@@ -51,8 +51,10 @@ blablabla diferents tipus blablabla
 blablabla
 
 ### TODOs
-#### TODO 1:
-
+#### TODO 1: Create a FastNoiseLite object.
+```
+FastNoiseLite noise;
+```
 #### TODO 1.2:
 
 #### TODO 1.3:
