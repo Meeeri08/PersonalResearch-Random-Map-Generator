@@ -49,6 +49,7 @@ Also, from the player perspective, it is more enjoyable to play a diferent map e
 
 The tricky part in procedural generation is not to make things random, but to make them in a consistent way despite it’s randomness. 
 There are two types of maps:
+
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/outdoor_map.gif" alt="Height Formula" width="600" height="340">|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/indoor_map.gif" alt="Height Formula" width="600" height="340">|
 |:---:|:---:|
 |Outdoor map |Indoor map|
