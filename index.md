@@ -64,7 +64,7 @@ noise.SetNoiseType(FastNoiseLite::NoiseType_Perlin);
 ```ruby
 noise.SetSeed(seed);
 ```
-#### TODO 1.4: Set the frequency to 0.05
+#### TODO 1.4: Set the frequency to 0.05.
 ```ruby
 noise.SetFrequency(0.05);
 
@@ -86,7 +86,19 @@ Output
 |:---:|:---:|
 |TODO 2|TODO 2.1|
 
-#### TODO 3:
+#### TODO 3: Draw the different textures into the map.
+```ruby
+if (value > 0 && value < 0.2) app->render->DrawTexture(app->scene->forestTex,pos.x, pos.y, NULL, scale);
+else if (value > 0.2 && value < 0.4) app->render->DrawTexture(app->scene->grassTex, pos.x, pos.y, NULL, scale);
+else if (value > 0.4 && value < 0.6)  app->render->DrawTexture(app->scene->sandTex, pos.x, pos.y, NULL, scale);
+else if (value > 0.6 && value < 1)  app->render->DrawTexture(app->scene->waterTex, pos.x, pos.y, NULL, scale);
+```
+Output
+
+
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/todo_3.PNG" alt="Height Formula" width="500" height="400">|
+|:---:|
+|TODO 3|
 
 ## Bibliography
 Library used: [Fast Portable Noise Library created by Jordan Peck](https://github.com/Auburn/FastNoiseLite)
