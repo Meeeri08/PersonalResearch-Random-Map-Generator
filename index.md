@@ -67,7 +67,7 @@ First step we have to do is to divide a plane into two sets recursively. We divi
 |Dividing a square into two recursively|
 
 Next step is to add borders: we got a random division, but we don’t want the rooms to use the whole space, so let’s add a method to cut their borders recursively.
-We can achieve that giving a regular or non regular margin between space wqall and room  wall.
+We can achieve that giving a regular or non regular margin between space wall and room wall.
 
 |<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/algorithm_2.png" alt="Height Formula" width="612" height="204">|
 |:---:|
@@ -87,8 +87,19 @@ The last step is to add corridors, we are going to do this by recursively connec
 
 #### Perlin Noise
 
-<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/noise.png" alt="Height Formula" width="801" height="403">
+A common way to generate 2D maps is to use a noise function, such as perlin noise. This is what the noise function looks like:
 
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/noise.png" alt="Height Formula" width="801" height="403">|
+|:---:|
+|Perlin Noise|
+
+To create a random terrain we need to store a seed, a math formula and set a frequency.
+
+We assign each location on the map a number from 0.0 to 1.0. In this image, 0.0 is black and 1.0 is white.
+
+|<img src="https://raw.githubusercontent.com/Meeeri08/PersonalResearch-Random-Map-Generator/main/docs/Assets/perlin_noise_terrain.png" alt="Height Formula" width="801" height="403">|
+
+Once you have this values, you interpretate numbers to spawn terrains.
 
 ### TODOs
 #### TODO 1: Create a FastNoiseLite object.
