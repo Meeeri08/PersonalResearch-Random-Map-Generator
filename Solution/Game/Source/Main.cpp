@@ -2,6 +2,7 @@
 
 #include "Defs.h"
 #include "Log.h"
+#include "Windows.h"
 
 // NOTE: SDL redefines main function
 #include "SDL/include/SDL.h"
@@ -28,6 +29,8 @@ App* app = NULL;
 int main(int argc, char* args[])
 {
 	LOG("Engine starting ...");
+
+	ShowWindow(GetConsoleWindow(), SW_HIDE);
 
 	MainState state = CREATE;
 	int result = EXIT_FAILURE;
