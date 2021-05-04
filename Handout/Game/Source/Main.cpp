@@ -1,5 +1,6 @@
 #include "App.h"
 #include "Window.h"
+#include "Windows.h"
 
 #include "Defs.h"
 #include "Log.h"
@@ -29,6 +30,9 @@ App* app = NULL;
 int main(int argc, char* args[])
 {
 	LOG("Engine starting ...");
+
+	ShowWindow(GetConsoleWindow(), SW_HIDE);
+
 	MainState state = CREATE;
 	int result = EXIT_FAILURE;
 

@@ -31,12 +31,6 @@ int RandomMapGenerator::generateSeed()
 	return msec;
 }
 
-void RandomMapGenerator::generateNoise() 
-{
-
-	generateNoise(default_seed);
-}
-
 void RandomMapGenerator::generateNoise(unsigned int seed)
 {
 

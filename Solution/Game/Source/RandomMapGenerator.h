@@ -16,13 +16,11 @@ public:
 
 	int generateSeed();
 
-	void generateNoise();
-
 	void generateNoise(unsigned int seed);
 private:
 	time_t msec;
 	float frequency;
-	float default_seed;
+
 };
 
 #endif // !__RandomMapGenerator__
